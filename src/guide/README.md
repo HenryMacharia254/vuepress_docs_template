@@ -1,0 +1,215 @@
+# Introduction
+
+This is a simple Documentation template that can be customized for use in different spaces. It uses markdown and is thus very easy to implement.
+
+Some sample markdown that can be used includes:
+
+---
+
+**Advertisement :)**
+
+- **[pica](https://nodeca.github.io/pica/demo/)** - high quality and fast image
+  resize in browser.
+- **[babelfish](https://github.com/nodeca/babelfish/)** - developer friendly
+  i18n with plurals support and easy syntax.
+
+You will like those projects!
+
+---
+
+## Headings 8-)
+
+```
+# h1 Heading
+
+## h2 Heading
+
+### h3 Heading
+
+#### h4 Heading
+
+##### h5 Heading
+
+###### h6 Heading
+```
+
+## Horizontal Rules
+
+---
+
+---
+
+---
+
+## Emphasis
+
+**This is bold text**
+
+**This is bold text**
+
+_This is italic text_
+
+_This is italic text_
+
+~~Strikethrough~~
+
+## Blockquotes
+
+> Blockquotes can also be nested...
+>
+> > ...by using additional greater-than signs right next to each other...
+> >
+> > > ...or with spaces between arrows.
+
+## Lists
+
+Unordered
+
+- Create a list by starting a line with `+`, `-`, or `*`
+- Sub-lists are made by indenting 2 spaces:
+  - Marker character change forces new list start:
+    - Ac tristique libero volutpat at
+    * Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
+- Very easy!
+
+Ordered
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+
+1) You can use sequential numbers...
+1) ...or keep all the numbers as `1.`
+
+Start numbering with offset:
+
+57. foo
+1. bar
+
+## Code
+
+Inline `code`
+
+Indented code
+
+    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+
+Block code "fences"
+
+```
+Sample text here...
+```
+
+Syntax highlighting
+
+```js
+var foo = function(bar) {
+  return bar++;
+};
+
+console.log(foo(5));
+```
+
+## Tables
+
+| Option | Description                                                               |
+| ------ | ------------------------------------------------------------------------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default.    |
+| ext    | extension to be used for dest files.                                      |
+
+Right aligned columns
+
+| Option |                                                               Description |
+| -----: | ------------------------------------------------------------------------: |
+|   data | path to data files to supply the data that will be passed into templates. |
+| engine |    engine to be used for processing templates. Handlebars is the default. |
+|    ext |                                      extension to be used for dest files. |
+
+## Links
+
+[link text](http://dev.nodeca.com)
+
+[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+
+## Images
+
+![Minion](https://octodex.github.com/images/minion.png)
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+
+Like links, Images also have a footnote style syntax
+
+![Alt text][id]
+
+With a reference later in the document defining the URL location:
+
+[id]: https://octodex.github.com/images/dojocat.jpg "The Dojocat"
+
+## Plugins
+
+The killer feature of `markdown-it` is very effective support of
+[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
+
+### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
+
+> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
+>
+> Shortcuts (emoticons): :-) :-( 8-) ;)
+
+### [Subscript] / [Superscript] - I mixed with some html
+
+- 19<sup>th</sup>
+- H<sub>2</sub>O
+
+### [Custom containers](https://vuepress.vuejs.org/guide/markdown.html#custom-containers)
+
+::: tip
+This is a tip
+:::
+
+::: warning
+This is a warning
+:::
+
+::: danger
+This is a dangerous warning
+:::
+
+::: details
+This is a details block, which does not work in IE / Edge
+:::
+
+**Custom Container Titles**
+
+::: danger STOP
+Danger zone, do not proceed
+:::
+
+::: details Click me to view the code
+
+```js
+console.log("Hello, VuePress!");
+```
+
+:::
+
+## [Line Highlighting in Code Blocks](https://vuepress.vuejs.org/guide/markdown.html#line-highlighting-in-code-blocks)
+
+```js{1,5,7-9}
+export default {
+  // Highlighted
+  data() {
+    return {
+      msg: `Highlighted!
+      This line isn't highlighted,
+      but this and the next 2 are.`,
+      motd: "VuePress is awesome",
+      lorem: "ipsum",
+    };
+  },
+};
+```

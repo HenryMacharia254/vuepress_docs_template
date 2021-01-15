@@ -1,0 +1,21 @@
+{
+  "name": "VuePress",
+  "version": "0.0.1",
+  "description": "First VuePress app",
+  "main": "index.js",
+  "authors": {
+    "name": "Henry",
+    "email": "machariawaribu@gmail.com"
+  },
+  "repository": "customrepo/VuePress",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.8.0",
+    "@vuepress/plugin-medium-zoom": "^1.8.0",
+    "vuepress": "^1.5.3"
+  }
+}
