@@ -1,4 +1,4 @@
-# Introduction
+# Intro
 
 This is a simple Documentation template that can be customized for use in different spaces. It uses markdown and is thus very easy to implement.
 

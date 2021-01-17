@@ -20,15 +20,15 @@ module.exports = {
     editLinks: false,
     docsDir: "",
     editLinkText: "",
-    lastUpdated: false,
+    lastUpdated: true,
     nav: [
       {
-        text: "Guide",
+        text: "Intro",
         link: "/guide/",
       },
       {
-        text: "Config",
-        link: "/config/",
+        text: "Theme",
+        link: "/theming/",
       },
       {
         text: "VuePress",
@@ -36,24 +36,29 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/guide/": [
-        {
-          title: "Guide",
-          collapsable: false,
-          children: ["", "using-vue"],
-        },
-      ],
+      "/guide/": ["", "using-vue", "Internationalization", "Frontmatter"],
+
+      "/theming/": ["", "writing-a-theme"],
+
+      // "/guide": "auto",
+      // "/theme": "auto"
     },
+
+    displayAllHeaders: true, // Default: false
+
+    // To enable numbers in code blocks
+    // markdown: {
+    //   lineNumbers: true,
+    // },
+
+    // Apply plugins，
+
+    plugins: [
+      "@vuepress/plugin-back-to-top",
+      "@vuepress/plugin-medium-zoom",
+      "@vuepress/last-updated",
+      "@vuepress/active-header-links",
+      "@vuepress/nprogress",
+    ],
   },
-
-  displayAllHeaders: true, // Default: false
-
-  // To enable numbers in code blocks
-  // markdown: {
-  //   lineNumbers: true,
-  // },
-
-  // Apply plugins，
-
-  plugins: ["@vuepress/plugin-back-to-top", "@vuepress/plugin-medium-zoom"],
 };
