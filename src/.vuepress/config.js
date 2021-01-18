@@ -21,6 +21,7 @@ module.exports = {
     docsDir: "",
     editLinkText: "",
     lastUpdated: true,
+    smoothScroll: true,
     nav: [
       {
         text: "Intro",
@@ -38,13 +39,13 @@ module.exports = {
     sidebar: {
       "/guide/": ["", "using-vue", "Internationalization", "Frontmatter"],
 
-      "/theming/": ["", "writing-a-theme"],
+      "/theming/": ["", "writing-a-theme", "Default-Theme-Config", "BlogTheme"],
 
       // "/guide": "auto",
       // "/theme": "auto"
     },
 
-    displayAllHeaders: true, // Default: false
+    displayAllHeaders: false, // Default: false
 
     // To enable numbers in code blocks
     // markdown: {
