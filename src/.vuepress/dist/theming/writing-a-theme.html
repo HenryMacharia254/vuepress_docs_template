@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Writing a Theme | Custom Docs Site</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    
+    <meta name="description" content="First VuePress app">
+    <meta name="theme-color" content="#5ceb1a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.267681cf.css" as="style"><link rel="preload" href="/assets/js/app.80e4414e.js" as="script"><link rel="preload" href="/assets/js/2.c7533ec3.js" as="script"><link rel="preload" href="/assets/js/18.43b035c9.js" as="script"><link rel="prefetch" href="/assets/js/10.2491a45d.js"><link rel="prefetch" href="/assets/js/11.64390f4c.js"><link rel="prefetch" href="/assets/js/12.6b61de55.js"><link rel="prefetch" href="/assets/js/13.3427719b.js"><link rel="prefetch" href="/assets/js/14.21279b18.js"><link rel="prefetch" href="/assets/js/15.398b4fea.js"><link rel="prefetch" href="/assets/js/16.b8bd361f.js"><link rel="prefetch" href="/assets/js/17.11615e4b.js"><link rel="prefetch" href="/assets/js/3.c033293e.js"><link rel="prefetch" href="/assets/js/4.582aa2f9.js"><link rel="prefetch" href="/assets/js/5.285c8936.js"><link rel="prefetch" href="/assets/js/6.c8b7a84a.js"><link rel="prefetch" href="/assets/js/7.c15ad905.js"><link rel="prefetch" href="/assets/js/8.9c82483d.js"><link rel="prefetch" href="/assets/js/9.8ff87b77.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.267681cf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Custom Docs Site</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
+  Intro
+</a></div><div class="nav-item"><a href="/theming/" class="nav-link router-link-active">
+  Theme
+</a></div><div class="nav-item"><a href="https://v1.vuepress.vuejs.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  VuePress
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
+  Intro
+</a></div><div class="nav-item"><a href="/theming/" class="nav-link router-link-active">
+  Theme
+</a></div><div class="nav-item"><a href="https://v1.vuepress.vuejs.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  VuePress
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/theming/" aria-current="page" class="sidebar-link">Using a Theme</a></li><li><a href="/theming/writing-a-theme.html" aria-current="page" class="active sidebar-link">Writing a Theme</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/theming/writing-a-theme.html#theme-basics" class="sidebar-link">Theme Basics</a></li><li class="sidebar-sub-header"><a href="/theming/writing-a-theme.html#content-outlet" class="sidebar-link">Content Outlet</a></li><li class="sidebar-sub-header"><a href="/theming/writing-a-theme.html#directory-structure" class="sidebar-link">Directory Structure</a></li><li class="sidebar-sub-header"><a href="/theming/writing-a-theme.html#layout-component" class="sidebar-link">Layout Component</a></li><li class="sidebar-sub-header"><a href="/theming/writing-a-theme.html#apply-plugins" class="sidebar-link">Apply plugins</a></li><li class="sidebar-sub-header"><a href="/theming/writing-a-theme.html#site-and-page-metadata" class="sidebar-link">Site and Page Metadata</a></li><li class="sidebar-sub-header"><a href="/theming/writing-a-theme.html#content-excerpt" class="sidebar-link">Content Excerpt</a></li><li class="sidebar-sub-header"><a href="/theming/writing-a-theme.html#app-level-enhancements" class="sidebar-link">App Level Enhancements</a></li></ul></li><li><a href="/theming/Default-Theme-Config.html" class="sidebar-link">Default Theme Config</a></li><li><a href="/theming/BlogTheme.html" class="sidebar-link">Blog Theme</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="writing-a-theme"><a href="#writing-a-theme" class="header-anchor">#</a> Writing a Theme</h1> <h2 id="theme-basics"><a href="#theme-basics" class="header-anchor">#</a> Theme Basics</h2> <p>To write a theme, create a .vuepress/theme directory in your docs root, and then create a Layout.vue file:</p> <div class="language-md extra-class"><pre class="language-md"><code>.
+└─ .vuepress
+└─ theme
+└─ Layout.vu
+</code></pre></div><p>From there it’s the same as developing a normal Vue application. It’s entirely up to you how to organize your theme.</p> <h2 id="content-outlet"><a href="#content-outlet" class="header-anchor">#</a> Content Outlet</h2> <p>The compiled content of the current .md file being rendered will be available as a special <code>&lt;Content/&gt;</code> global component. You will need to render it somewhere in your layout to display the content of the page. The simplest theme can be a single Layout.vue component with the following content:</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>theme-container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>content</span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>Also see: <a href="https://vuepress.vuejs.org/guide/markdown-slot.html" target="_blank" rel="noopener noreferrer">Markdown Slot<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="directory-structure"><a href="#directory-structure" class="header-anchor">#</a> Directory Structure</h2> <p>One Layout.vue might not be enough, and you might also want to define more layout components in the theme for using on different pages. You may also want to customize the palette, and even apply some plugins.</p> <p>So it’s time to reorganize your theme, an agreed theme directory structure is as follows:</p> <div class="custom-block tip"><p class="custom-block-title">Structure</p> <p>theme<br>
+├── global-components<br>
+│ └── xxx.vue<br>
+├── components<br>
+│ └── xxx.vue<br>
+├── layouts<br>
+│ ├── Layout.vue (Mandatory)<br>
+│ └── 404.vue<br>
+├── styles<br>
+│ ├── index.styl<br>
+│ └── palette.styl<br>
+├── templates<br>
+│ ├── dev.html<br>
+│ └── ssr.html<br>
+├── index.js<br>
+├── enhanceApp.js<br>
+└── package.json</p></div> <ul><li><code>theme/global-components</code>: Components under this directory will be automatically registered as global components. For details, please check out @vuepress/plugin-register-components (opens new window).</li> <li><code>theme/components</code>: Your components.</li> <li><code>theme/layouts</code>: Layout components of the theme, where Layout.vue is required.</li> <li><code>theme/styles</code>: Global style and palette.</li> <li><code>theme/templates</code>: Edit default template.</li> <li><code>theme/index.js</code>: Entry file of theme configuration.</li> <li><code>theme/enhanceApp.js</code>: Theme level enhancements.</li></ul> <div class="custom-block warning"><p class="custom-block-title">Note</p> <p>When you publish your theme as an npm package, if you don’t have any theme configuration, that means you don’t have theme/index.js, you’ll need to set the &quot;main&quot; field to layouts/Layout.vue in package.json, only in this way VuePress can properly resolve the theme.</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  ...
+  <span class="token property">&quot;main&quot;</span><span class="token operator">:</span> <span class="token string">&quot;layouts/Layout.vue&quot;</span><span class="token punctuation">,</span>
+  ...
+<span class="token punctuation">}</span>
+</code></pre></div></div> <h2 id="layout-component"><a href="#layout-component" class="header-anchor">#</a> Layout Component</h2> <p>Suppose your theme layouts folder is as follows:</p> <div class="custom-block tip"><p class="custom-block-title">\_\_</p> <div class="language- extra-class"><pre class="language-text"><code>theme
+└── layouts
+   ├── Layout.vue
+   ├── AnotherLayout.vue
+   └── 404.vue
+</code></pre></div></div> <p>Then, all the pages will use Layout.vue as layout component by default, while the routes not matching will use 404.vue.<br>
+To switch the layout of some pages to AnotherLayout.vue, all you have to do is update the frontmatter of this page:</p> <div class="language-md extra-class"><pre class="language-md"><code><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token font-matter yaml language-yaml"><span class="token key atrule">layout</span><span class="token punctuation">:</span> AnotherLayout</span>
+<span class="token punctuation">---</span></span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>Each layout component may render distinct pages. To apply some global UI (for example global header), consider using globalLayout</p></div> <h2 id="apply-plugins"><a href="#apply-plugins" class="header-anchor">#</a> Apply plugins</h2> <p>You can apply some plugins to the theme via theme/index.js</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/theme/index.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span>
+      <span class="token string">&quot;@vuepress/pwa&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        serviceWorker<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        updatePopup<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="site-and-page-metadata"><a href="#site-and-page-metadata" class="header-anchor">#</a> Site and Page Metadata</h2> <p>The Layout component will be invoked once for every .md file in docs, and the metadata for the entire site and that specific page will be exposed respectively as this.$site and this.$page properties which are injected into every component in the app.</p> <p>Example values of $site:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;VuePress&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Vue-powered Static Site Generator&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;base&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;pages&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;lastUpdated&quot;</span><span class="token operator">:</span> <span class="token number">1524027677000</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;VuePress&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;frontmatter&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    ...
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>title, description and base are copied from respective fields in .vuepress/config.js. pages contains an array of metadata objects for each page, including its path, page title (explicitly specified in YAML frontmatter or inferred from the first header on the page), and any YAML frontmatter data in that file.</p> <p>Sample $page data:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;lastUpdated&quot;</span><span class="token operator">:</span> <span class="token number">1524847549000</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/guide/custom-themes.html&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Custom Themes&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;headers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token comment">/* ... */</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;frontmatter&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>If the user provided themeConfig in .vuepress/config.js, it will also be available as $site.themeConfig. You can use this to allow users to customize behavior of your theme - for example, specifying categories and page order. You can then use these data together with $site.pages to dynamically construct navigation links.</p> <p>Don’t forget that this.$route and this.$router are also available as part of Vue Router’s API.</p> <h2 id="content-excerpt"><a href="#content-excerpt" class="header-anchor">#</a> Content Excerpt</h2> <p>If a Markdown file contains a <code>&lt;!-- more --&gt;</code>comment, any content above the comment will be extracted and exposed as <code>$page.excerpt</code>. If you are building custom theme for blogging, this data can be used to render a post list with excerpts.</p> <h2 id="app-level-enhancements"><a href="#app-level-enhancements" class="header-anchor">#</a> App Level Enhancements</h2> <p>Themes can enhance the Vue app that VuePress uses by exposing an enhanceApp.js file at the root of the theme. The file should export default a hook function which will receive an object containing some app-level values. You can use this hook to install more Vue plugins, register global components, or add router hooks:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+  Vue<span class="token punctuation">,</span> <span class="token comment">// the version of Vue being used in the VuePress app</span>
+  options<span class="token punctuation">,</span> <span class="token comment">// the options for the root Vue instance</span>
+  router<span class="token punctuation">,</span> <span class="token comment">// the router instance for the app</span>
+  siteData<span class="token punctuation">,</span> <span class="token comment">// site metadata</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...apply enhancements to the app</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">1/18/2021, 8:37:44 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/theming/" class="prev router-link-active">
+        Using a Theme
+      </a></span> <span class="next"><a href="/theming/Default-Theme-Config.html">
+        Default Theme Config
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.80e4414e.js" defer></script><script src="/assets/js/2.c7533ec3.js" defer></script><script src="/assets/js/18.43b035c9.js" defer></script>
+  </body>
+</html>
